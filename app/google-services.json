@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "298261206618",
+    "project_id": "barterbay-30157",
+    "storage_bucket": "barterbay-30157.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298261206618:android:b5ee7311ead8c670a6aa63",
+        "android_client_info": {
+          "package_name": "com.example.barterbay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298261206618-q6qumb390dfp3vvquu3hr6u199k61jvg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtEdWv6u_mYLQlaInL-QB-URqgvmqedR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298261206618-q6qumb390dfp3vvquu3hr6u199k61jvg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
