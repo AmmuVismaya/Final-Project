@@ -22,5 +22,14 @@ data class  ProductDetails(
     var ProductPrice:String? = "",
     var ProductImage:String?  = ""
 )
+data class MyCart(
+    var ProductName:String? = "",
+    var Price:String? = "",
+    var ImageUrl:String?  = "",
+    var Description:String?  = "",
+
+
+
+)
 
 

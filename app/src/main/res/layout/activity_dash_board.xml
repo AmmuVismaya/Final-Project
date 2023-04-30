@@ -14,7 +14,7 @@
             android:background="@color/color_green"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
-            app:navigationIcon="@drawable/ic_add_camera"
+            app:menu="@menu/menu"
             app:layout_constraintTop_toTopOf="parent">
 
         </com.google.android.material.appbar.MaterialToolbar>

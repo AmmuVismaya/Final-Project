@@ -8,7 +8,9 @@ import androidx.fragment.app.Fragment
 import com.example.barterbay.R
 import com.example.barterbay.databinding.ActivityDashBoardBinding
 import com.example.barterbay.databinding.ActivityLoginBinding
+import com.example.barterbay.fragment.AddProuctFragment
 import com.example.barterbay.fragment.DashBoardFragment
+import com.example.barterbay.fragment.MyCartFragment
 import com.example.barterbay.fragment.ProductDetailFragment
 import com.example.barterbay.profile.ProfileActivity
 
@@ -20,6 +22,7 @@ class DashBoardActivity : AppCompatActivity() {
       binding = DataBindingUtil.setContentView(this,R.layout.activity_dash_board)
         replaceFragment(DashBoardFragment())
         setUpFragments()
+        setUpToolbar()
         binding.toolbar.setNavigationOnClickListener {
             startActivity(Intent(this,ProfileActivity::class.java))
         }
@@ -38,6 +41,7 @@ class DashBoardActivity : AppCompatActivity() {
                 R.id.dashboardFragment -> replaceFragment(DashBoardFragment())
                 R.id.productFragment -> replaceFragment(ProductDetailFragment())
 
+
 //            R.id.project -> replaceFragment(Project_Fragment())
 
                 else -> {
@@ -47,5 +51,18 @@ class DashBoardActivity : AppCompatActivity() {
 
             true
         }
+
     }
-}
+    private fun setUpToolbar(){
+        binding.toolbar.setOnMenuItemClickListener {
+            when(it.itemId) {
+                R.id.menu_cart -> replaceFragment(MyCartFragment())
+                R.id.menu_add_product->replaceFragment(AddProuctFragment())
+            }
+
+           true
+            }
+
+        }
+    }
+
